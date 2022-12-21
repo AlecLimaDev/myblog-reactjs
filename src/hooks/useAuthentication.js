@@ -1,5 +1,5 @@
 import { db } from "../firebase/config";
-import { getFirestore } from "firebase/firestore";
+
 
 import {
     getAuth,
