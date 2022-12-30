@@ -37,7 +37,6 @@ export const useDeleteDocument = (docCollection) => {
 
     try {
       const deleteDocument = await deleteDoc(doc(db, docCollection, id));
-      
 
       checkCancelBeforeDispatch({
         type: "DELETED_DOC",

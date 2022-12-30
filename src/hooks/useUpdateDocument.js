@@ -23,7 +23,6 @@ const updateReducer = (state, action) => {
 export const useUpdateDocument = (docCollection) => {
   const [response, dispatch] = useReducer(updateReducer, initialState);
 
- 
   const [cancelled, setCancelled] = useState(false);
 
   const checkCancelBeforeDispatch = (action) => {
@@ -36,10 +35,9 @@ export const useUpdateDocument = (docCollection) => {
     checkCancelBeforeDispatch({ type: "LOADING" });
 
     try {
+      const docRef = await doc(db, docCollection, id);
 
-        const docRef = await doc(db, docCollection, id)
-
-        const updateDocument = await updateDoc(docRef, data)
+      const updateDocument = await updateDoc(docRef, data);
 
       checkCancelBeforeDispatch({
         type: "UPDATED_DOC",
