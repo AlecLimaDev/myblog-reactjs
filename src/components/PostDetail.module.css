@@ -4,6 +4,7 @@
 
 .post_detail img {
     max-width: 800px;
+    margin: 0 auto;
 }
 
 .post_detail h2 {
