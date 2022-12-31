@@ -27,11 +27,39 @@
 
 .links_list li a {
     padding: .4em .6em;
-}
+} 
 
 .active {
     background-color: #000;
     color: #fff;
 }
 
+@media screen and (max-width: 992px) { 
+    .navbar {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
 
+@media screen and (max-width: 535px) { 
+    .navbar {
+        max-width: 100%;   
+        display: flex;
+        justify-content: space-evenly;  
+        align-items: center;
+    }
+
+    .links_list { 
+        display: wrap; 
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0.8em;
+        letter-spacing: 0.1em;
+        margin-bottom: 1em;
+     }     
+
+     .links_list li a {
+        padding: .2em 3em;
+    }    
+}
