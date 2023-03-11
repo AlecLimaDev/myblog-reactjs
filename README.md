@@ -22,3 +22,22 @@ Aplicação onde crio e estruturo um servidor real utilizando o Firebase como ba
 ## `Aplicação`
 
 No link a seguir contém o Link da aplicação: [`Deploy`](https://myblog-reactjs.vercel.app/).
+
+
+## `LAYOUT` 
+
+Antes de você realizar sua postagem no blog você vai ter que se cadastrar.
+
+### `TELA DE CADASTRO`
+
+![IMAGEM](public/tela-cadastrar.PNG)
+
+Após o cadastro suas postagens vão aparecer na tela inicial.
+
+### `TELA INICIAL`
+
+![IMAGEM](public/tela-home.PNG)
+
+Postagem feita por todos os usuários.
+
+
