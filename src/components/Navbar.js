@@ -6,6 +6,7 @@ import { useAuthValue } from "../context/AuthContext";
 
 import styles from "./Navbar.module.css";
 
+
 const Navbar = () => {
   const { user } = useAuthValue();
   const { logout } = useAuthentication();

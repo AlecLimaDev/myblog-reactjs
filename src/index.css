@@ -108,6 +108,32 @@ button[disabled] {
 }
 
 
+
+#light {
+  background: #f6fcff;
+  color: #000;
+}
+
+#dark {
+  background: #272727;
+  color: #fff;
+  text-shadow: rgb(255, 255, 255) 0.3em 0.1em 0.4em
+}
+
+
+.switch {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch label {
+  margin: 10px;
+}
+
+
 /* .container .error {
   color: #721c24;
   background-color: #f8d7da;

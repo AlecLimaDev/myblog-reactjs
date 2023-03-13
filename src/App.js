@@ -13,6 +13,7 @@ import { useState, useEffect } from "react";
 import { useAuthentication } from "./hooks/useAuthentication";
 
 import { AuthProvider } from "./context/AuthContext";
+import ReactSwitch from "react-switch";
 
 import Home from "../src/pages/Home/Home";
 import About from "../src/pages/About/About";
@@ -27,6 +28,13 @@ import Post from "./pages/Post/Post";
 import EditPost from "./pages/EditPost/EditPost";
 
 function App() {
+  const [theme, setTheme] = useState("dark")
+
+  const toggleTheme = () => {
+    setTheme((color) => (color === "light" ? "dark" : "light"))
+  }
+
+
   const [user, setUser] = useState(undefined);
   const { auth } = useAuthentication();
   const loadingUser = user === undefined;
@@ -42,11 +50,15 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <AuthProvider value={{ user }}>
+    <div className="App" id={theme}>
+      <AuthProvider value={{ user, theme, toggleTheme }}>
         <Router>
           <Navbar />
           <div className="container">
+          <div className="switch">
+          <label>{theme === "light" ? "Light Mode" : "Dark Mode"}</label>
+          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+        </div>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
