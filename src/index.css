@@ -117,7 +117,7 @@ button[disabled] {
 #dark {
   background: #272727;
   color: #fff;
-  text-shadow: rgb(255, 255, 255) 0.3em 0.1em 0.4em
+  text-shadow: rgb(253, 0, 0) 0.2em 0.1em 0.1em;
 }
 
 
