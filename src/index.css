@@ -1,4 +1,8 @@
 
+:root {
+  --color-dark: red;
+  --color-title: #994848;
+}
 
 body { 
   background-color: #f6fcff;
@@ -62,6 +66,7 @@ textarea {
   border-bottom: 1px solid #ccc;
   padding: .8em 0;
   background-color: transparent;
+  color: var(--color-title);
 }
 
 .btn {
@@ -116,8 +121,7 @@ button[disabled] {
 
 #dark {
   background: #272727;
-  color: #fff;
-  text-shadow: rgb(253, 0, 0) 0.2em 0.1em 0.1em;
+  color: var(--color-dark); 
 }
 
 
