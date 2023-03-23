@@ -1,28 +1,46 @@
-.post_container {
-    text-align: center;
-}
+import styled from "styled-components"
 
-.post_container h3 {
+
+export const PostContainer = styled.div`
+    text-align: center;
+
+
+    h3 {
     margin-bottom: 0.2em;
 }
 
-.post_container .tags { 
+.tags { 
     display: flex;
     justify-content: center;
 }
 
-.tags p {
+
+p {
     margin-right: 1em;
 }
 
-.tags span {
+
+span {
     font-weight: bold;
 }
 
+
 img {
-    width: 90%;
+    width: 95%;
 }
 
 h1 {
     text-align: center;
 }
+`
+
+
+
+
+
+
+
+
+ 
+
+

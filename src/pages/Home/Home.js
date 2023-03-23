@@ -1,4 +1,4 @@
-import styles from "./Home.module.css";
+import * as Styles from "./Home.style";
 
 import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
@@ -20,9 +20,9 @@ const Home = () => {
   };
 
   return (
-    <div className={styles.home}>
+    <Styles.Home>
       <h1>Veja os posts mais recentes</h1>
-      <form onSubmit={handleSubmit} className={styles.search_form}>
+      <form onSubmit={handleSubmit} className="search_form">
         <input
           type="text"
           placeholder="Ou busque por tags..."
@@ -34,7 +34,7 @@ const Home = () => {
         {loading && <p>Carregando...</p>}
         {posts && posts.map((post) => <PostDetail key={post.id} post={post} />)}
         {posts && posts.length === 0 && (
-          <div className={styles.noposts}>
+          <div className="noposts">
             <p>Não foram encontrados posts</p>
             <Link to="/posts/create" className="btn">
               Criar primeiro Post
@@ -42,7 +42,7 @@ const Home = () => {
           </div>
         )}
       </div>
-    </div>
+    </Styles.Home>
   );
 };
 

@@ -1,10 +1,13 @@
-.home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+import styled from "styled-components"
 
+
+export const Home = styled.div`
+
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 
 .search_form {
     max-width: 100%;
@@ -13,6 +16,7 @@
     justify-content: center;
     margin-bottom: 2em;
 }
+
 
 .search_form input {
     margin-right: 10px;
@@ -30,4 +34,10 @@
 .noposts a {
     padding: 10px 25px;
 }
+
+
+
+
+
+`
 

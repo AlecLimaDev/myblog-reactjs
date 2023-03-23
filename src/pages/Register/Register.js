@@ -1,4 +1,4 @@
-import styles from './Register.module.css'
+import * as Styles from "./Register.style"
 
 import React from 'react'
 
@@ -41,7 +41,7 @@ const Register = () => {
   }, [authError])
 
   return (
-    <div className={styles.register}>
+    <Styles.Register>
         <h1>Cadastre-se para postar</h1>
         <form onSubmit={handleSubmit}>
             <label>
@@ -75,7 +75,7 @@ const Register = () => {
                onChange={(e) => setPassword(e.target.value)} />
             </label>
             <label>
-            <span>Conirmação de senha: </span>
+            <span>Confirmação de senha: </span>
             <input
              type="password" 
              name='confirmPassword' 
@@ -88,7 +88,7 @@ const Register = () => {
           {loading && <button className='btn' disabled>Aguarde...</button>}
           {error && <p className='error'>{error}</p>}
         </form>
-    </div>
+    </Styles.Register>
   )
 }
 

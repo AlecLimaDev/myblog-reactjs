@@ -1,7 +1,7 @@
 
 :root {
   --color-dark: red;
-  --color-title: #994848;
+  --color-title: #9b9494;
 }
 
 body { 
@@ -29,7 +29,7 @@ nav button {
   text-decoration: none;
   background-color: transparent;
   border: none;
-  color: #000;
+  /* color: #000; */
   transition: .4s;
   font-size: 1em;
   cursor: pointer;
@@ -67,6 +67,7 @@ textarea {
   padding: .8em 0;
   background-color: transparent;
   color: var(--color-title);
+  font-weight: 700;
 }
 
 .btn {
@@ -117,12 +118,15 @@ button[disabled] {
 #light {
   background: #f6fcff;
   color: #000;
+  text-transform: capitalize;
 }
 
 #dark {
   background: #272727;
-  color: var(--color-dark); 
+  color: white; 
+  text-transform: capitalize;
 }
+
 
 
 .switch {

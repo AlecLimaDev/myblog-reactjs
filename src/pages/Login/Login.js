@@ -1,5 +1,4 @@
-import styles from './Login.module.css';
-
+import * as Styles from "./Login.style"
 import { useState, useEffect } from 'react'
 import { useAuthentication } from '../../hooks/useAuthentication'
 
@@ -32,9 +31,9 @@ const Login = () => {
   }, [authError])
 
   return (
-    <div className={styles.login}>
+    <Styles.Login>
     <h1>Entrar</h1>
-    <p>Faça o login para poder utilizar o sistema</p>
+    <p>Faça login para interagir no Blog</p>
     <form onSubmit={handleSubmit}>
         <label>
           <span>E-mail: </span>
@@ -62,7 +61,7 @@ const Login = () => {
       {loading && <button className='btn' disabled>Aguarde...</button>}
       {error && <p className='error'>{error}</p>}
     </form> 
-    </div>
+    </Styles.Login>
   )
 }
 

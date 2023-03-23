@@ -9,8 +9,9 @@ export const About = styled.div`
     align-items: center;
 
     p {
-        color: #aaa;
+        /* color: #aaa; */
         margin-bottom: 2em;
+        font-weight: 500;
     }
 
     a {

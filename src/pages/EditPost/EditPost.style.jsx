@@ -9,13 +9,12 @@ export const EditPost = styled.div`
     }
 
     p {
-    color: #aaa;
     margin-bottom: 2em;
+    font-weight: 500;
     }
 
     .preview_title {
-    margin-bottom: .2em;
-    color: #000;
+    margin-bottom: 1em;
     font-weight: bold;
     } 
 
@@ -28,6 +27,8 @@ export const ImagePreview = styled.img`
      max-width: 100%;
      margin-bottom: 1em;
 
+
+    
      @media screen and (max-width: 450px) {
         max-width: 100%;
         margin-bottom: 1em;

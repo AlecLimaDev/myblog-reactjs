@@ -16,8 +16,8 @@ export const Dashboard = styled.div`
 
 
     p {
-    color: #aaa;
     margin-bottom: 1em;
+    font-weight: 600;
   }
 
 
@@ -55,10 +55,11 @@ export const Dashboard = styled.div`
     width: 90%;
     padding: 10px;
     border-bottom: 2px solid #ccc;
-    
 
     span {
       font-family: sans-serif;
+      text-transform: uppercase;
+      font-weight: 800;
     }
   
   `
@@ -71,9 +72,10 @@ export const Dashboard = styled.div`
     align-items: center;
     border-bottom: 2px solid #eee;
 
-    p {
-    color: #000;
-    }
+    /* p {
+    color: #eee;
+    font-weight: 600;
+    } */
 
     a {
     margin: 0 5px;
