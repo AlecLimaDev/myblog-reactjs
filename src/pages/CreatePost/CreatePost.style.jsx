@@ -6,12 +6,11 @@ export const CreatePost = styled.div`
 
     h2 {
     font-size: 2.2em;
-}
+    }
 
-p {
-    color: #aaa;
+    p {
     margin-bottom: 2em;
-}
+    }
 
 .btn {
     &:hover {
@@ -27,10 +26,6 @@ export const Label = styled.label`
 span { 
     font-family: sans-serif;
 }
-
-
-
-
 `
 
 

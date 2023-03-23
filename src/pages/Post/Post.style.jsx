@@ -4,10 +4,9 @@ import styled from "styled-components"
 export const PostContainer = styled.div`
     text-align: center;
 
-
     h3 {
     margin-bottom: 0.2em;
-}
+    }
 
 .tags { 
     display: flex;
@@ -32,6 +31,8 @@ img {
 h1 {
     text-align: center;
 }
+
+   
 `
 
 

@@ -36,7 +36,18 @@ justify-content: center;
 }
 
 
+@media (max-width: 476px) {
+    h1 {
+        text-align: center;
+    }
 
+    .search_form {
+    width: 85%;
+}
+
+
+
+}
 
 
 `
