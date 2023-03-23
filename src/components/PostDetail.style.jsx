@@ -8,6 +8,7 @@ export const PostDetail = styled.div`
     img {
         max-width: 800px;
         margin: 0 auto;
+        border-radius: 15px;
     }
 
     h2 {
