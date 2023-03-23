@@ -1,4 +1,4 @@
-import styles from "./Dashboard.module.css";
+import * as Styles from "./Dashboard.style"
 
 import { Link } from "react-router-dom";
 
@@ -19,28 +19,28 @@ const Dashboard = () => {
   }
 
   return (
-    <div className={styles.dashboard}>
+    <Styles.Dashboard>
       <h2>Dashboard</h2>
       <p>Gerencie os seus posts</p>
       {posts && posts.length === 0 ? (
-        <div className={styles.noposts}>
+        <Styles.NoPosts>
           <p>Não foram encontrados posts</p>
           <Link to="/posts/create" className="btn">
             Criar primeiro post
           </Link>
-        </div>
+        </Styles.NoPosts>
       ) : (
-        <div className={styles.post_header}>
+        <Styles.PostHeader>
           <span>Título</span>
           <span>Ações</span>
-        </div>
+        </Styles.PostHeader>
       )}
 
       {posts &&
         posts.map((post) => (
-          <div className={styles.post_row} key={post.id}>
+          <Styles.PostRow key={post.id}>
             <p>{post.title}</p>
-            <div className={styles.actions}>
+            <div className="actions">
               <Link to={`/posts/${post.id}`} className="btn btn-outline">
                 Ver
               </Link>
@@ -54,9 +54,9 @@ const Dashboard = () => {
                 Excluir
               </button>
             </div>
-          </div>
+          </Styles.PostRow>
         ))}
-    </div>
+    </Styles.Dashboard>
   );
 };
 

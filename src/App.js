@@ -1,4 +1,4 @@
-import "./App.css";
+import * as Styles from "./App.jsx";
 
 import {
   BrowserRouter as Router,
@@ -27,6 +27,7 @@ import Search from "./pages/Search/Search";
 import Post from "./pages/Post/Post";
 import EditPost from "./pages/EditPost/EditPost";
 
+
 function App() {
   const [theme, setTheme] = useState("dark")
 
@@ -54,7 +55,7 @@ function App() {
       <AuthProvider value={{ user, theme, toggleTheme }}>
         <Router>
           <Navbar />
-          <div className="container">
+          <Styles.Container>
           <div className="switch">
           <label>{theme === "light" ? "Light Mode" : "Dark Mode"}</label>
           <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
@@ -85,7 +86,7 @@ function App() {
                 element={user ? <Dashboard /> : <Navigate to="/login" />}
               />
             </Routes>
-          </div>
+          </Styles.Container>
           <Footer />
         </Router>
       </AuthProvider>

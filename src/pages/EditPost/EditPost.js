@@ -1,4 +1,4 @@
-import styles from "./EditPost.module.css";
+import * as Styles from "./EditPost.style";
 
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
@@ -65,7 +65,7 @@ const EditPost = () => {
   };
 
   return (
-    <div className={styles.edit_post}>
+    <Styles.EditPost>
       {post && (
         <>
           <h2>Editando post: {post.title}</h2>
@@ -93,9 +93,8 @@ const EditPost = () => {
                 value={image}
               />
             </label>
-            <p className={styles.preview_title}>Preview da imagem atual:</p>
-            <img
-              className={styles.image_preview}
+            <p className="preview_title">Preview da imagem atual:</p>
+            <Styles.ImagePreview
               src={post.image}
               alt={post.title}
             />
@@ -107,7 +106,8 @@ const EditPost = () => {
                 placeholder="Insira o conteúdo do post"
                 onChange={(e) => setBody(e.target.value)}
                 value={body}
-              ></textarea>
+              >
+              </textarea>
             </label>
             <label>
               <span>Tags:</span>
@@ -131,7 +131,7 @@ const EditPost = () => {
           </form>
         </>
       )}
-    </div>
+    </Styles.EditPost>
   );
 };
 

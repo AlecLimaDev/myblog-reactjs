@@ -1,11 +1,12 @@
-import styles from "./Footer.module.css";
+import * as Styles from "./Footer.style"
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <Styles.Footer>
       <h3>Escreva sobre o que você tem interesse!</h3>
-      <p>Todos os direitos reservados &copy; 2022</p>
-    </footer>
+      <p>Todos os direitos reservados &copy; 2023</p>
+      <p>Desenvolvedor Alec Lima</p>
+    </Styles.Footer>
   );
 };
 

@@ -1,10 +1,10 @@
-import styles from "./About.module.css";
+import * as Styles from "./About.style"
 
 import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <Styles.About>
       <h2>
         Sobre o Mini <span>Blog</span>
       </h2>
@@ -15,7 +15,7 @@ const About = () => {
       <Link to="/posts/create" className="btn">
         Criar post
       </Link>
-    </div>
+    </Styles.About>
   );
 };
 

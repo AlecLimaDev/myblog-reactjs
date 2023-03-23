@@ -1,4 +1,4 @@
-import styles from "./CreatePost.module.css";
+import * as Styles from "./CreatePost.style";
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -47,13 +47,13 @@ const CreatePost = () => {
   };
 
   return (
-    <div className={styles.create_post}>
+    <Styles.CreatePost>
       <h2>Criar Post</h2>
       <p>Escreva sobre o que quiser e compartilhe o seu conhecimento!</p>
       <form onSubmit={handleSubmit}>
-        <label>
+        <Styles.Label>
           <span>Título:</span>
-          <input
+          <Styles.Input
             type="text"
             name="title"
             required
@@ -61,19 +61,19 @@ const CreatePost = () => {
             onChange={(e) => setTitle(e.target.value)}
             value={title}
           />
-        </label>
-        <label>
+        </Styles.Label>
+        <Styles.Label>
           <span>URL da imagem:</span>
-          <input
+          <Styles.Input
             type="text"
             name="image"
             required
-            placeholder="Insira uma image que representa o seu post"
+            placeholder="Insira uma imagem que representa o seu post"
             onChange={(e) => setImage(e.target.value)}
             value={image}
           />
-        </label>
-        <label>
+        </Styles.Label>
+        <Styles.Label>
           <span>Conteúdo:</span>
           <textarea
             name="body"
@@ -81,11 +81,12 @@ const CreatePost = () => {
             placeholder="Insira o conteúdo do post"
             onChange={(e) => setBody(e.target.value)}
             value={body}
-          ></textarea>
-        </label>
-        <label>
+          >
+          </textarea>
+        </Styles.Label>
+        <Styles.Label>
           <span>Tags:</span>
-          <input
+          <Styles.Input
             type="text"
             name="tags"
             required
@@ -93,7 +94,7 @@ const CreatePost = () => {
             onChange={(e) => setTags(e.target.value)}
             value={tags}
           />
-        </label>
+        </Styles.Label>
         {!response.loading && <button className="btn">Cadastrar</button>}
         {response.loading && (
           <button className="btn" disabled>
@@ -103,7 +104,7 @@ const CreatePost = () => {
         {response.error && <p className="error">{response.error}</p>}
         {formError && <p className="error">{formError}</p>}
       </form>
-    </div>
+    </Styles.CreatePost>
   );
 };
 
