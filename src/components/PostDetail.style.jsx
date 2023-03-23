@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const PostDetail = styled.div`
+
     margin-bottom: 2em;
 
 
@@ -38,9 +39,9 @@ export const PostDetail = styled.div`
     }
 
 
-    @media screen and(max-width: 992px) {
+    @media (max-width: 992px) {
      img {
-        max-width: 95%;
+        max-width: 80%;
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -48,12 +49,19 @@ export const PostDetail = styled.div`
     }
     .createdBy {
         font-style: italic;
-        color: #444;
         font-size: 1em;
         margin-bottom: 1em;
     }
   h2 {
         margin-bottom: .4em;
+        text-align: center;
+    }
+
+    .createdBy {
+        font-style: italic;
+        /* font-size: 1em;
+        margin-bottom: 1em; */
+        text-align: center;
     }
 
     .tags p {
@@ -61,8 +69,17 @@ export const PostDetail = styled.div`
         display: flex;
     }
 
+    .post_detail {
+        text-align: center;
+    }
 
-    @media screen and(max-width: 600px) {
+      .tags {
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (max-width: 620px) {
      img {
         max-width: 95%;
         /* margin: 0 auto; */
@@ -77,18 +94,31 @@ export const PostDetail = styled.div`
     }
 
     .createdBy {
-        width: 100%;
+        font-style: italic;
+        font-size: 1em;
+        margin-bottom: 1em;
+        text-align: center;
     }
-
     
 
      span {
         font-weight: bold;
+     } 
+
+
+     .post_detail {
+        text-align: center;
+    }
+
+      .tags {
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
     }
 
 
 
-    @media screen and(max-width: 450px) {
+    @media (max-width: 450px) {
        img {
         max-width: 95%;
         margin: 0 auto;
@@ -115,6 +145,7 @@ export const PostDetail = styled.div`
       .createdBy {
         width: 100%;
     }
+
 }
 }
 }
