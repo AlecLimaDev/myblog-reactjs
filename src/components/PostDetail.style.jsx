@@ -33,8 +33,7 @@ export const PostDetail = styled.div`
 
     .createdBy {
         font-style: italic;
-        color: #444;
-        font-size: 0.8em;
+        font-size: 1em;
         margin-bottom: 1em;
     }
 
