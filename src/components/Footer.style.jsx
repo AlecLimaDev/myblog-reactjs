@@ -7,7 +7,7 @@ export const Footer = styled.footer`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #edf3f6;
+    text-transform: uppercase;
     text-align: center;
 
     h3 {
