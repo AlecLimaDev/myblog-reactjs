@@ -23,8 +23,10 @@ export const About = styled.div`
     .btn { 
         &:hover {
             background-color: #5BEA1C;
+            transition: 2s all;
         }
     }
+
 
 
 `
