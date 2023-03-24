@@ -9,6 +9,16 @@ export const Login = styled.div`
  p {
    text-transform: uppercase;
 }
+
+
+@media (max-width: 530px) {
+            form {
+            /* background-color: red; */
+            max-width: 65%;
+        }
+        
+        }
+
 `
 
 
